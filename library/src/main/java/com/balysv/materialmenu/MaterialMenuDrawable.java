@@ -137,8 +137,9 @@ public class MaterialMenuDrawable extends Drawable implements Animatable {
         iconPaint = new Paint();
         iconPaint.setAntiAlias(true);
         iconPaint.setStyle(Style.STROKE);
-        iconPaint.setStrokeWidth(strokeWidth);
-        iconPaint.setColor(color);
+//        iconPaint.setStrokeWidth(strokeWidth);
+		iconPaint.setStrokeWidth(dip2);
+		iconPaint.setColor(color);
 
         circlePaint = new Paint();
         circlePaint.setAntiAlias(true);
@@ -274,8 +275,8 @@ public class MaterialMenuDrawable extends Drawable implements Animatable {
                 pivotY = height / 2;
 
                 // shorten both ends
-                startX += dip3 * ratio;
-                stopX -= dip3 * ratio;
+				startX += dip4 * ratio;
+				stopX -= dip4 * ratio;
 
                 break;
             case BURGER_X:
@@ -366,9 +367,9 @@ public class MaterialMenuDrawable extends Drawable implements Animatable {
                 pivotY = height / 2;
 
                 // shorten both ends
-                startX = sidePadding + dip3 * ratio;
-                stopX = width - sidePadding - dip3 * ratio;
-                break;
+				startX = sidePadding + dip4 * ratio;
+				stopX = width - sidePadding - dip4 * ratio;
+				break;
             case BURGER_X:
                 if (isMorphingForward()) {
                     // rotate around
