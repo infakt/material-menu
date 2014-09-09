@@ -5,6 +5,6 @@
         <attr name="scale" format="integer"/>
         <attr name="transformDuration" format="integer"/>
         <attr name="pressedDuration" format="integer"/>
-        <attr name="strokeWidth" format="integer"/>
+        <attr name="mm_strokeWidth" format="integer"/>
     </declare-styleable>
 </resources>
